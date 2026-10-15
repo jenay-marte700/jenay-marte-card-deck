@@ -46,3 +46,134 @@ h1 span {
     line-height: 1.5;
 }
 
+.card-count {
+    margin-top: 28px;
+    color: #7b67e8;
+}
+
+.deck {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 410px;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(30, 30, 50, 0.14);
+    border-radius: 14px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.card-back {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    transform: rotateY(180deg);
+}
+
+/* card images */
+
+.artwork {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #eeeeF4;
+}
+
+.artwork img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+}
+
+/* card front*/
+
+.card-info {
+    padding: 15px 7px 5px;
+}
+
+.card-category {
+    font-size: 10px;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.card-info h2 {
+  margin: 8px 0;
+  font-size: 23px;
+}
+
+.card-period {
+  margin: 0;
+  color: #777785;
+  font-size: 12px;
+}
+
+.flip-hint {
+  margin-top: 15px;
+  color: #7b67e8;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* card back */
+
+
+
+@media (max-width: 540px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* links to descriptions about each aesthetic
+
+frutiger aero - [https://aesthetics.fandom.com/wiki/Frutiger_Aero](https://aesthetics.fandom.com/wiki/Frutiger_Aero)\
+vector funk - [https://aesthetics.fandom.com/wiki/Vectordelia](https://aesthetics.fandom.com/wiki/Vectordelia)\
+vector grunge - [https://aesthetics.fandom.com/wiki/Vectordelia](https://aesthetics.fandom.com/wiki/Vectordelia)\
+Parisian girly - [https://aesthetics.fandom.com/wiki/Parisian_Girly](https://aesthetics.fandom.com/wiki/Parisian_Girly)\
+metalheart - [https://aesthetics.fandom.com/wiki/Metalheart](https://aesthetics.fandom.com/wiki/Metalheart)\
+glitter graphics - [https://aesthetics.fandom.com/wiki/Glitter_Graphics](https://aesthetics.fandom.com/wiki/Glitter_Graphics)
+
+*/
