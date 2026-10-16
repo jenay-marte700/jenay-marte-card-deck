@@ -1,0 +1,61 @@
+[{
+  "id": "frutiger-aero",
+    "name": "Frutiger Aero",
+    "period": "2004–2013",
+    "category": "OPTIMISTIC TECHNOLOGY",
+    "description": "Frutiger Aero features glossy, translucent surfaces, shiny 3D icons, smooth gradients, and soft lighting. Its visuals often combine bright blues, greens, and whites with bubbles, water droplets, clear skies, landscapes, and glowing light effects.",
+    "colors": ["#74e7f2", "#76d58a", "#ffffff", "#002db3"],
+    "keywords": ["Nature", "Glass", "Internet"],
+    "image": "images/frutiger-aero.jpg"
+  },
+  {
+    "id": "vector-funk",
+    "name": "Vector Funk/ Frutiger Metro",
+    "period": "Mid-2000s–early 2010s",
+    "category": "MUSIC & GRAPHIC DESIGN",
+    "description": "Vectordelia (Frutiger Metro) features vibrant vector graphics, flowing curves, abstract shapes, bold silhouettes, and layered patterns. Its visuals often combine bright, saturated colors with gradients, stars, splatters, and music-inspired imagery for an energetic, groovy look.",
+    "colors": ["#171717", "#f42f78", "#c5ff36", "yellow"],
+    "keywords": ["Vectors", "Music", "Gradients"],
+    "image": "images/vector-funk.jpg"
+  },
+  {
+    "id": "vector-grunge",
+    "name": "Vector Grunge",
+    "period": "Mid-2000s–early 2010s",
+    "category": "GRUNGE VECTOR DESIGN",
+    "description": "Vector Grunge features dark backgrounds, colorful splatters, overlapping patterns, and edgy vector shapes. Its visuals combine bold colors with chaotic designs inspired by emo and scene culture.",
+    "colors": [ "#c22b1d",  "#16d9ff", "black", "#e80e5a"],
+    "keywords": ["Grunge", "Splatter", "Scene"],
+    "image": "images/vector-grunge.jpg"
+  },
+  {
+    "id": "parisian-girly",
+    "name": "Shoe Diva",
+    "period": "Late 2000s–early 2010s",
+    "category": "FEMININE LUXURY FASHION",
+    "description": "Shoe Diva features colorful, sketch-like illustrations of high heels, fashionable women, shopping bags, and girly accessories, decorated with sparkles, hearts, and playful looping lines.",
+    "colors": ["#ffb8d7", "#ffffff", "#222222"],
+    "keywords": ["Fashion", "Paris", "Luxury"],
+    "image": "images/parisian-girly.png"
+  },
+  {
+    "id": "metalheart",
+    "name": "Metalheart",
+    "period": "Late 1990s–mid-2000s",
+    "category": "FUTURISTIC DIGITAL ART",
+    "description": "Metalheart features distorted 3D forms, metallic textures, geometric patterns, and futuristic digital interfaces. Futuristic visuals, thin glowing lines, grids, and technological typography that stand out against dark, blurred backgrounds.",
+    "colors": ["#a7b8c8", "#252b38", "#56d9ff", "black"],
+    "keywords": ["Chrome", "Cyber", "Abstract"],
+    "image": "images/metalheart.png"
+  },
+  {
+    "id": "glitter-graphics",
+    "name": "Glitter Graphics",
+    "period": "Mid-to-late 2000s",
+    "category": "PROFILE CUSTOMIZATION",
+    "description": "Sparkling web graphics featuring glitter effects, decorative text, hearts, stars, flowers, and layered images made for personal profiles and early webpages.",
+    "colors": ["#ff8ad9", "#b8a1ff", "#fff6a5"],
+    "keywords": ["Glitter", "GIFs", "MySpace"],
+    "image": "images/glitter-graphics.gif"
+  }
+]

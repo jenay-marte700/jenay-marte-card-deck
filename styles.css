@@ -5,7 +5,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    
     color: #000000;
     background-color: #f4f4f4;
 }
@@ -13,7 +13,7 @@ body {
 .header {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 55px 24px 35px;
 }
 
 .smalltext,
@@ -24,13 +24,13 @@ footer {
     letter-spacing: 2px;
 }
 
-smalltext {
+.smalltext {
     color: #555;
 }
 
 h1 {
     font-size: 30px;
-    letter-spacing: -4px;
+    letter-spacing: 4px;
     margin: 18px 0;
     line-height: 0.95;
 }
@@ -52,10 +52,13 @@ h1 span {
 }
 
 .deck {
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
 }
 
 .card {
@@ -97,13 +100,42 @@ h1 span {
     padding: 12px;
 }
 
+
 .card-back {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 24px;
     transform: rotateY(180deg);
+    overflow-y: auto;
 }
+
+
+/* scrollbar */
+.card-back::-webkit-scrollbar {
+    width: 4px;
+}
+
+.card-back::-webkit-scrollbar-track {
+    background: #70a2d4;
+    
+}
+
+.card-back::-webkit-scrollbar-thumb {
+    background: #a99ae8;
+    
+}
+
+.card-back::-webkit-scrollbar-thumb:hover {
+    background: #7b67e8;
+}
+
+.card-back {
+    scrollbar-width: thin;
+    scrollbar-color: #a99ae8 #f0eefb;
+}
+
+
 
 /* card images */
 
@@ -123,7 +155,7 @@ h1 span {
     width: 100%;
     height: 100%;
     min-height: 0;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* card front*/
@@ -158,14 +190,105 @@ h1 span {
 
 /* card back */
 
+.card-back h2 {
+  margin: 12px 0;
+  font-size: 27px;
+}
 
+.back-category {
+  color: #7b67e8;
+  
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.back-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.keyword {
+  padding: 7px 9px;
+  border-radius: 10px;
+  background: #f0eefb;
+  color: #5546a0;
+  font-size: 11px;
+}
+
+.palette-label {
+  margin-top: auto;
+  padding-top: 20px;
+  color: #777785;
+  font-size: 11px;
+}
+
+.palette {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.swatch {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+
+/* footer */
+footer {
+    padding: 25px;
+    border-top: 1px solid #dedde3;
+    color: #777785;
+    text-align: center;
+}
+
+
+
+/* responsive */
+
+@media (max-width: 850px) {
+  .card {
+    width: 280px;
+  }
+}
 
 @media (max-width: 540px) {
-    .card {
-        width: 100%;
-        height: auto;
-    }
+  .header {
+    padding-top: 35px;
+  }
+
+  h1 {
+    letter-spacing: -2px;
+  }
+
+  .deck {
+    max-width: 390px;
+  }
+
+  .card {
+    width: 100%;
+    height: 410px;
+  }
+
+  .card-back {
+    padding: 18px;
+  }
+
+  .back-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 }
+
 
 /* links to descriptions about each aesthetic
 
